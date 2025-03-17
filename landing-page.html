@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printables Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dfd3d3;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card .description {
+            padding: 15px;
+            display: none;
+        }
+        .card:hover .description {
+            display: block;
+        }
+        .card:hover img {
+            display: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Printables</h1>
+    </header>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <img src="Resources/cat.jpg" alt="Sample Image">
+            <div class="description">
+                <h2>Product 1</h2>
+                <p>This is a description of product 1. It is a great product that you will love.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="description">
+                <h2>Product 2</h2>
+                <p>This is a description of product 2. It is an amazing product that you will enjoy.</p>
+            </div>
+            <img src="Resources/cat2.jpg" alt="Sample Image">
+        </div>
+        <div class="card">
+            <img src="Resources/dog.jpg" alt="Sample Image">
+            <div class="description">
+                <h2>Product 3</h2>
+                <p>This is a description of product 3. It is a fantastic product that you will find useful.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="description">
+                <h2>Product 4</h2>
+                <p>This is a description of product 4. It is a wonderful product that you will appreciate.</p>
+            </div>
+            <img src="Resources/dog2.jpg" alt="Sample Image">
+        </div>
+    </div>
+</body>
+</html>
